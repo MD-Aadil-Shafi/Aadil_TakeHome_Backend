@@ -257,3 +257,19 @@ The User table includes:
 - All timestamps in UTC ISO 8601 format
 
 ---
+
+### Unit tests:
+
+Run Tests
+
+# Run all tests
+
+pytest tests/test_aadil_takehome.py -v
+
+# Run specific feature
+
+pytest tests/test_aadil_takehome.py::TestRBAC -v
+
+# Run with coverage
+
+pytest tests/test_aadil_takehome.py --cov=app --cov-report=html
